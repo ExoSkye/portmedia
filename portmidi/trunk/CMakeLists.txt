@@ -4,6 +4,8 @@
 
 cmake_minimum_required(VERSION 2.6)
 
+option(BUILD_TESTING "Builds tests" OFF)
+
 if(UNIX)
   # allow user to set Release or Debug
   set(CMAKE_BUILD_TYPE Release CACHE STRING 
